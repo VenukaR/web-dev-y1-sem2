@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PAYMENT GATEWAY</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="payment.css">
+        <link rel="icon" type="image/png" href="thumbnails/MH.png">
+
+</head>
+<body>
+    <header>
+           <nav> 
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+               <i class='fa fa-bars'></i>                
+               </label>
+               <label class="logo"><a href="SplashScreen.html">MusicHub.</a></label>
+                    <ul>
+                        <li><a  href="mainpage.html">Home</a></li>
+                        <li><a  href="aboutus.html">About</a></li>
+                        <li><a  href="gallery_2.html">Gallery</a></li>
+                        <li><a class="active" href="shop.html">Shop</a></li>
+                        <li><a  href="CW.html">Quiz</a></li>
+                        <li><a href="sitemap.html">SiteMap</a></li>
+                        <li><a href="feedbackform.html">Feedback</a></li>
+               </ul>    
+           </nav>    
+   </header>
+   <form action="checkout.html" method="GET">
+	<div class="container">
+		<div class="form">
+            
+			<h2>Billing Address</h2>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="nic">NIC/Passport No:</label>
+			<input type="text" id="nic" name="nic" placeholder="NIC" required>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" placeholder="+94XXXXXXXXX" maxlength="10" required>
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address" placeholder="Address" required>
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city" placeholder="City" required>
+			<label for="country">Country:</label>
+			<select id="country" name="country" required>
+                <option value="">--Select Your Country--</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="United States">United States</option>
+                <option value="Russia">Russia</option>
+                <option value="Japan">Japan</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Canada">Canada</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Australia">Australia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Philippines">Philippines</option>
+            </select>
+           
+		</div>
+		<div class="card-form">
+			<h2>Card Details</h2>
+            <img class="payimg" src="thumbnails/payment-meth-1.png" alt="pay-img">
+			<label for="cardname">Name on Card:</label>
+			<input type="text" id="cardname" name="cardname" placeholder="Name On Card" required>
+			<label for="cardnumber">Card Number:</label>
+			<input type="number" id="cardnumber" name="cardnumber" placeholder="Card Number"  required>
+			<div class="flex">
+            <label for="expdate">Expiration Date:</label>
+			<input type="number" id="expdate" name="expdate" placeholder="MM/YY" required>
+            <label for="cvv">CVV:</label>
+			<input type="password" id="cvv" name="cvv"  placeholder="CVV" maxlength="3" required>
+            </div>
+            <!-- <p> The USD rates will be use according to the Central Bank Of Sri Lanka</p> -->
+            <h1 class="tot">Amount :<span id="total"></span></h1>
+		</div>
+	</div>
+</form>
+	<button class="pay-btn" id="pay-now-button" >Pay Now</button>
+
+<!-- Footer -->
+<div class="footer">
+    <footer>
+                <div class="footer-content">
+                    <h3>MusicHub.</h3>
+                    <p> <a href="pageED.html">Sahan</a> |<a href="editor-sayura.html">Sayura</a> |<a href="Thewmika-editor.html">Thewmika</a> |<a href="editor-venuka.html">Venuka</a></p>
+                </div>
+                <div class="footer_bottom">
+                    <p>Copyright &copy;2023 MusicHub.  |  designed by <span>Venuka</span></p>
+                </div>
+            </footer>
+        </div>  
+    <script src="payment.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MusicHub | Gallery</title>
+
+         <!-- title image -->
+         <link rel="stylesheet" href="gallery_2.css">
+         <link rel="stylesheet" href="Main.css" >
+         <link rel="icon" type="image/png" href="thumbnails/MH.png">
+
+        <script src="gallery_2.js"></script>
+
+    </head>
+    
+    <body>
+ 
+        <!-- navigation bar -->
+        <header>
+            <nav> 
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class='fa fa-bars'></i>
+                </label>
+                <label class="logo"><a href="SplashScreen.html">MusicHub.</a></label>
+            <ul>
+                <li><a  href="mainpage.html">Home</a></li>
+                <li><a  href="aboutus.html">About</a></li>
+                <li><a class="active" href="gallery_2.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a  href="CW.html">Quiz</a></li>
+                <li><a href="sitemap.html">SiteMap</a></li>
+                <li><a href="feedbackform.html">Feedback</a></li>
+            </ul>
+            </nav>
+        </header>
+
+
+        <div class="bd2">
+            <g class="color_choice">            <!-- change background color: https://www.youtube.com/watch?v=FRTMfXlyYrU -->
+                <select id="selectid">
+                    <option value="" selected disabled hidden>---Select Color---</option>
+                    <option class="White">White</option>
+                    <option class="LightBlue">LightBlue</option>
+                    <option class="Black">Black</option>
+                    <option Class="LightGreen">LightGreen</option>
+                </select>
+    
+                <button onclick="colorbg ()">
+                    Select color
+                </button>
+            </g>
+    
+            <div class="text-sizes">     <!-- change font size: https://www.youtube.com/watch?v=xOy0kVlbhlc -->
+                <div class="buttons">
+                    <span class="btn active" onclick="document.getElementById('text').style.fontSize= '1em'">A</span>
+                    <span class="btn" onclick="document.getElementById('text').style.fontSize= '1.25em'">A</span>
+                    <span class="btn" onclick="document.getElementById('text').style.fontSize= '1.40em'">A</span>
+                </div>
+                <div class="content" id="text">
+                    <h2>Gallery</h2>
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="container" role="main">
+                <!-- main container -->
+                <br><br>
+                <div class="gallery">
+                    <!-- gallery items -->
+                    <div class="gallery-item" onclick="getImage(1)">
+                        <!-- gallery item1 -->
+                        <div >
+                        <img class="gallery-image" src="thumbnails/img1.png" alt="img1"  >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Pop Music
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(2)">
+                        <!-- gallery item2 -->
+                        <div>
+                        <img class="gallery-image" src="thumbnails/img2.jpg" alt="img2"  >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Electronic Music
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(3)">
+                        <!-- gallery item3 -->
+                        <div>
+                        <img class="gallery-image" src="thumbnails/img3.jpg" alt="img3"  >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Bob Marley
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(4)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img4.jpg" alt="img4"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Music Mixing & Editing
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(5)">
+                        <!-- gallery item5 -->
+                        <div>
+                        <img class="gallery-image" src="thumbnails/img5.jpg" alt="img5"   >
+                        </div>
+                        <div class="gallery-image-description" role="article">
+                        <h3>DJ
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(6)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img6.jpg" alt="img6"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>David Guetta
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(7)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img7.jpg" alt="img7"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Rock Music
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(8)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img8.jpg" alt="img8"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Country Music
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(9)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img9.webp" alt="img9"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Hip-Hop Music
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(10)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img10.jpg" alt="img10"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Michael Jackson
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(11)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img11.webp" alt="img11"   >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Jazz
+                        </h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="getImage(12)">
+                        <!-- gallery item4 -->
+                        <div>
+                        <img class="gallery-image" src= "thumbnails/img12.webp" alt="img12"  >
+                        </div>
+                        <div class="gallery-image-description">
+                        <h3>Snoop Dogg
+                        </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+                    <br>
+                    
+                  
+    
+                  <div id="gallery-display">
+                    <!-- big image and description display area -->
+                    <div id="bigImage-div">
+                      <img id="big-image"  alt="big-image" src=""    
+                        role="img" aria-label="bigger image of the selected image" /><!-- big image will display here -->
+                    </div>
+                    <div id="bigImage-description-div">
+                      <p id="bigImage-description"></p>
+                      <!-- image description will be here -->
+                    </div>
+                    <div class="form">
+                    <!--form to select destination, change page colour, change font colour-->
+                    </div>
+                  </div>
+            </div>
+            <br>
+            
+    
+            
+        </div>
+        
+        <div class="footer">
+            <footer>
+                <div class="footer-content">
+                    <h3>MusicHub.</h3>
+                    <p> <a href="pageED.html">Sahan</a> |<a href="editor-sayura.html">Sayura</a> |<a href="Thewmika-editor.html">Thewmika</a> |<a href="editor-venuka.html">Venuka</a></p>
+                </div>
+                <div class="footer_bottom">
+                    <p>copyright &copy;2023 MusicHub.  |  designed by <span>Sayura</span></p>
+                </div>
+            </footer>
+        </div>
+        
+
+        
+    </body>
+</html>
+
+
+    

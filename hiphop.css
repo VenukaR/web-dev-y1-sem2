@@ -1,0 +1,201 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(thumbnails/hip-hop-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HIP HOP BODY */
+/* header image */
+.hiphop-header {
+    position: relative;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("thumbnails/hip-hop-bg.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 650px;
+    margin-bottom:10px;
+}
+
+.band-name {
+    position: relative;
+    top: 440px;
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 600;
+    color:white;
+}
+
+.band-name-large {
+    font-size: 8rem;
+}
+/* other img */
+.container-all {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    height:auto;
+    background-color: rgba(255, 255, 255, 0.88);
+
+}
+.container-all h1 , h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.container-all h3{
+    margin-top:20px;
+    margin-bottom: 10px;;
+}
+.container-all p{
+    font-size:17px;
+}
+.image-text {
+    display: flex;
+    align-items: center;
+}
+.image-text img {
+    width:500px;
+    height:auto;
+    margin-right: 20px;
+}
+
+
+
+/* container-1 */   
+.container-1 h1{
+    font-size: 39px;
+
+}
+
+.pac-biggie{
+    margin-left:25% ;
+    width:50%;
+    height:auto;
+}
+.pac-biggie-text{
+    margin-left:25%
+}
+.gangsta{
+    width:100%;
+}
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: greenyellow;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5%;
+    font-size: 24px;
+    cursor: pointer;
+    border-color: white;
+  }
+
+
+/* nav bar styling */
+
+nav{
+    background:#000000;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index:999;
+}
+label.logo a{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    margin:  100px;
+    /* font-weight: bold; */
+} 
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px ;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: black;
+}
+a.active , a:hover{
+    background: #595858;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    padding-top: 25px;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    @media (max-width: 858px){
+        .checkbtn{
+            display:block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+            left: -100%;
+            transition: all .5s;
+            text-align: center;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a.active, a:hover{
+            background: none;
+            color: #0082e6;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    }
+}

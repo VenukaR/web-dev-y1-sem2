@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>INVOICE</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="checkout.css">
+        <link rel="icon" type="image/png" href="thumbnails/MH.png">
+
+</head>
+<body>
+    <header>
+           <nav> 
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+               <i class='fa fa-bars'></i>                
+               </label><label class="logo"><a href="SplashScreen.html">MusicHub.</a></label>
+                    <ul>
+                        <li><a  href="mainpage.html">Home</a></li>
+                        <li><a  href="aboutus.html">About</a></li>
+                        <li><a  href="gallery_2.html">Gallery</a></li>
+                        <li><a class="active" href="shop.html">Shop</a></li>
+                        <li><a  href="CW.html">Quiz</a></li>
+                        <li><a href="sitemap.html">SiteMap</a></li>
+                        <li><a href="feedbackform.html">Feedback</a></li>
+               </ul>    
+           </nav>    
+   </header>
+   <!-- invoice -->
+    <div class="invoice">
+        <div class="header">
+            <h1>MusicHub.Shop</h1>
+            <h2>Invoice</h2>
+        </div>
+    <div class="billing-info">
+        <h3>Billing Info</h3>
+        <p>Invoice #001</p>
+        <p>Address: <span id="address"></span></p>
+        <p>City: <span id="city"></span></p>
+        <p>Country: <span id="country"></span></p>
+    </div>
+    <div class="user-details">
+        <h3>Buyer Info</h3>
+        <p>Name: <span id="name"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <p>Phone: <span id="phone"></span></p>
+    </div>
+    <div class="items">
+        <h3>Products</h3>
+        <div id="cartItems"></div>
+    </div>
+    <hr>
+    <div id="totalAm"></div>
+    <hr>
+    <br>
+    <span class="paid"> PAID</span>
+    <a href="shop.html"> <button class="goBack">Go Back</button></a>
+    <!-- printing the whole page -->
+   <button class="goBack" onclick="window.print()">Print The Invoice</button>
+    </div>
+<!-- footer -->
+<div class="footer">
+    <footer>
+                <div class="footer-content">
+                    <h3>MusicHub.</h3>
+                    <p> <a href="pageED.html">Sahan</a> |<a href="editor-sayura.html">Sayura</a> |<a href="Thewmika-editor.html">Thewmika</a> |<a href="editor-venuka.html">Venuka</a></p>
+                </div>
+                <div class="footer_bottom">
+                    <p>Copyright &copy;2023 MusicHub.  |  designed by <span>Venuka</span></p>
+                </div>
+            </footer>
+</div>  
+<script src="checkout.js"></script>
+</body>
+</html>

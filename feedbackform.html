@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="feedbackform.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="thumbnails/MH.png">   
+        <title>MusicHub. |Feedback Form</title>
+    
+    
+
+    </head>
+    <body>
+        <header>
+            <nav> 
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class='fa fa-bars'></i>                
+                </label>
+                <label class="logo"><a href="SplashScreen.html">MusicHub.</a></label>
+                    <ul>
+                        <li><a  href="mainpage.html">Home</a></li>
+                        <li><a  href="aboutus.html">About</a></li>
+                        <li><a  href="gallery_2.html">Gallery</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a  href="CW.html">Quiz</a></li>
+                        <li><a  href="sitemap.html">SiteMap</a></li>
+                        <li><a class="active" href="feedbackform.html">Feedback</a></li>
+                    </ul>     
+            </nav>        
+            </header>
+            
+            <form  id="myform" action="mailto:sayura758@gmail.com" method="post" enctype="text/plain">
+             <!--<form id="myForm" onsubmit="Javascript:buttonAction();return false">--> 
+        
+
+                <div class="form">
+                    <div class="form-in">
+                        <div class="title-div">
+                            <h1>Comments Form</h1>
+                            <p>Share Your Experience With Us</p>
+                            <p class="required">*Required</p>
+                        </div>
+                        <div class="name-div">
+                            <div class="name">Enter your Full name</div>
+                            <div class="input-div"><input type="text" id="name" name="answer" placeholder="Your answer" required></div>
+                        </div>
+                        <div class="college-div">
+                            <div class="name">Enter your Country</div>
+                            <div class="input-div"><input type="text" name="answer" placeholder="Your answer" required></div>
+                        </div>
+                        <div class="StudentID-div">
+                            <div class="name">Enter your Nationality</div>
+                            <div class="input-div"><input type="text" name="answer" placeholder="Your answer" required></div>
+                        </div>
+                        <div class="mail-div">
+                            <div class="name">Enter your Email</div>
+                            <div class="input-div"><input type="email" name="email" placeholder="Your Email" required></div>
+                        </div>
+                        <div class="number-div">
+                            <div class="name">Enter your Mobile number</div>
+                            <div class="input-div"><input type="tel" name="phone" placeholder="Your answer" maxlength="10" required></div>
+                        </div>
+                        <div class="dots-div">
+                            <p class="name">How satisfied were you with our website today?<br>Choose from '0' to '10' where 0 extremely dissatisfied and 10 is extremely satisfied.</p>
+                            <div class="name">
+                                <label>
+                                    <input type="radio" name="rating" value="1" id="post1" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2" id="post2" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3" id="post3" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4" id="post4" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5" id="post5" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="6" id="post6" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="7" id="post7" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="8" id="post8" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="9" id="post9" required>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="10" id="post10" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text_area-div">
+                            <label class="name" for="comments">Please could you tell us your reasons for giving this rating?</label><br><br>
+                            <textarea name="comments" id="comments" cols="75" rows="9" placeholder="Text here..." required></textarea><br><br>
+                        </div>
+                        <div class="rollboxes_1">
+                            <label class="name" for="courses1">How did you want to complete this task today?(optional)</label><br><br>
+                                    <select name="courses" id="courses1">
+                                        <option value="">---Please Select---</option>
+                                        <option value ="Phone">Phone</option>
+                                        <option value="Website">Website</option>
+                                        <option value="Webchat">Webchat</option>
+                                        <option value="Social Media">Social Media</option>
+                                        <option value="Email">Email</option>
+                                    </select>
+                                    <br><br>
+                        </div>
+        
+                        <div class="rollboxes_2">
+                            <label class="name" for="courses2">If you had to complete the task again,how would you prefer to do it?(optional)</label><br><br>
+                                    <select name="courses" id="courses2" >
+                                        <option value="">---Please Select---</option>
+                                        <option value="Phone">Phone</option>
+                                        <option value="Website">Website</option>
+                                        <option value="Webchat">Webchat</option>
+                                        <option value="Social Media">Social Media</option>
+                                        <option value="Email">Email</option>
+                                    </select><br><br>
+                        </div>
+        
+        
+                        <div class="submit">
+                            <input class="btn" type="submit">
+                        </div>
+                        </div>
+                    </div>
+            </form>
+
+            
+
+                <div class="footer">
+                    <footer>
+                        <div class="footer-content">
+                            <h3>MusicHub.</h3>
+                            <p> <a href="pageED.html">Sahan</a> |<a href="editor-sayura.html">Sayura</a> |<a href="Thewmika-editor.html">Thewmika</a> |<a href="editor-venuka.html">Venuka</a></p>
+                        </div>
+                        <div class="footer_bottom">
+                            <p>copyright &copy;2023 MusicHub.  |  designed by <span>Sayura</span></p>
+                        </div>
+                    </footer>
+                </div>
+
+                <script src="feedbackform.js"></script>
+</body>
+</html>

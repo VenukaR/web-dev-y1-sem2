@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+
+
+</head>
+<body>
+    <header>
+        <main>
+           <nav> 
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+               <i class='fa fa-bars'></i>                
+               </label>
+               <label class="logo"><a href="SplashScreen.html">MusicHub.</a></label>
+               <ul>
+                   <li><a  href="mainpage.html">Home</a></li>
+                   <li><a href="aboutus.html">About</a></li>
+                   <li><a href="gallery_2.html">Gallery</a></li>
+                   <li><a href="shop.html">Shop</a></li>
+                   <li><a  href="CW.html">Quiz</a></li>
+                   <li><a href="sitemap.html">SiteMap</a></li>
+                   <li><a href="feedbackform.html">Feedback</a></li>
+               </ul>    
+           </nav>    
+       </main>
+   </header>
+    <div class="container">
+        <div id="end" class="flex-cenrter flex-column">
+            <h1 id="finalScore"> 0 </h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your Score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled >Save</button>
+            </form> 
+            <a href="game.html" class="btn">Start Again</a>
+            <a href="CW.html" class="btn">Back to Main<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script src="end.js"></script>
+</body>
+</html>
